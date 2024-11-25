@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <!-- Corrected JavaScript inclusion -->
+    <script src="/mymain.js"></script>
+
+    <!-- Corrected CSS file links -->
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="media.css">
+    
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
     <title>MY Portfolio</title>
 </head>
 
@@ -39,17 +46,17 @@
         </div>
     </nav>
 
-    <!-- name and img -->
+    <!-- Profile Section -->
     <section id="profile">
         <div class="section-pic">
-            <img src="pics/pf.jpg" alt="My PFP" />
+            <img src="pics/pf.jpg" alt="Profile Picture" />
         </div>
         <div class="profile-text">
             <p class="profile-p1">Hello, I'm</p>
             <h1 class="title">Huzair Asim</h1>
             <p class="profile-p2">Frontend Developer</p>
             <div class="profile-btn">
-                <button class="cvbtn"><a href="/huzair cv.jpg"> My CV</a></button>
+                <button class="cvbtn"><a href="/huzair cv.jpg" title="Download My CV">My CV</a></button>
             </div>
             <div id="socials-container">
                 <img src="/linkedin logo.png" alt="My LinkedIn profile" class="icon"
@@ -58,22 +65,21 @@
                     onclick="location.href='https://github.com/huzairdhool'" />
                 <img src="/mail logo.webp" alt="My Gmail account" class="icon"
                     onclick="location.href='mailto:huzairdhool@gmail.com'" />
-                <img src="/insta logo.jpeg" alt="My Insta" class="icon"
+                <img src="/insta logo.jpeg" alt="My Instagram" class="icon"
                     onclick="location.href='https://www.instagram.com/huzair_asim/?next=%2F'" />
             </div>
         </div>
     </section>
 
-    <!-- about -->
-
+    <!-- About Section -->
     <section id="about">
         <div class="about-class">
             <h1 class="tag">About Me</h1>
         </div>
         <div class="about-div">
-            <p class="edp1">I am a skilled web developer focused on creating clean, user-friendly
-                websites.<br>Proficient in HTML, CSS, and JavaScript. Always eager to learn and adapt,<br> I enjoy
-                exploring new technologies and tools to keep my skills sharp and<br> my projects fresh.</p>
+            <p class="edp1">I am a skilled web developer focused on creating clean, user-friendly websites.<br>
+                Proficient in HTML, CSS, and JavaScript. Always eager to learn and adapt,<br>
+                I enjoy exploring new technologies and tools to keep my skills sharp and<br> my projects fresh.</p>
         </div>
         <div class="about-det">
             <div class="experience">
@@ -81,7 +87,6 @@
                 <p class="exp1">Web Developer</p>
                 <p class="exp2">Fresh</p>
             </div>
-
             <div class="education">
                 <h2>Education</h2>
                 <p class="edp1">BS in Computer Science</p>
@@ -90,12 +95,11 @@
         </div>
     </section>
 
-    <!-- skills -->
+    <!-- Skills Section -->
     <section id="skills">
         <div class="skill-class">
             <h1 class="skilltag">Skills</h1>
         </div>
-
         <div class="skills-container">
             <div class="skill-points">
                 <div class="html">
@@ -103,31 +107,29 @@
                     <h4>HTML</h4>
                     <p>Expert</p>
                 </div>
-                <div class="html">
+                <div class="css">
                     <img src="/css logo.jpg" alt="CSS Logo">
                     <h4>CSS</h4>
                     <p>Expert</p>
                 </div>
-                <div class="html">
+                <div class="js">
                     <img src="/js logo.png" alt="JavaScript Logo">
                     <h4>JS</h4>
                     <p>Basic</p>
                 </div>
             </div>
-
-
             <div class="skill-points2">
-                <div class="html">
+                <div class="python">
                     <img src="/py logo.png" alt="Python Logo">
                     <h4>Python</h4>
                     <p>Intermediate</p>
                 </div>
-                <div class="html">
+                <div class="wordpress">
                     <img src="/wp.png" alt="WordPress Logo">
                     <h4>WordPress</h4>
                     <p>Intermediate</p>
                 </div>
-                <div class="html">
+                <div class="react">
                     <img src="/rjs logo.png" alt="React.js Logo">
                     <h4>React.js</h4>
                     <p>Basic</p>
@@ -136,14 +138,12 @@
         </div>
     </section>
 
-    <!-- projects -->
+    <!-- Projects Section -->
     <section id="project">
         <div class="pro-class">
             <h1 class="protag">Projects</h1>
         </div>
-
         <div class="pro-imgs">
-
             <div class="pro-img">
                 <div class="image-container">
                     <img src="/project-1.png" alt="Project-1">
@@ -161,15 +161,13 @@
                     <img src="/rps.jpg" alt="Project-2">
                     <div class="pro-text">
                         <h3>Rock Paper Scissors</h3>
-                        <p>A game of Rock Paper and Scissors created <br>using HTML,CSS, and JS.</p>
+                        <p>A game of Rock Paper and Scissors created <br>using HTML, CSS, and JS.</p>
                     </div>
                 </div>
-                <button class="projectbtn"
-                    onclick="location.href='https://github.com/huzairdhool/Rock-paper-scissor-game.git'">
+                <button class="projectbtn" onclick="location.href='https://github.com/huzairdhool/Rock-paper-scissor-game.git'">
                     GitHub
                 </button>
             </div>
-
             <div class="pro-img">
                 <div class="image-container">
                     <img src="/amazone clone.png" alt="Project-3">
@@ -185,7 +183,7 @@
         </div>
     </section>
 
-    <!-- contact -->
+    <!-- Contact Section -->
     <section id="contact">
         <div class="cont-class">
             <h1 class="conttag">Contact Me</h1>
@@ -200,19 +198,17 @@
                 <input type="email" name="email" placeholder="Your EMAIL" class="inputbox" required="Required">
                 <textarea name="message" placeholder="Your Message" class="inputbox" required="Required"></textarea>
                 <div class="fbtnclass">
-                <button id="formbtn" type="submit">Submit</button></div>
+                    <button id="formbtn" type="submit">Submit</button>
+                </div>
             </form>
         </div>
     </section>
 
-    <!-- footer -->
-    <!-- back to top -->
-
+    <!-- Footer and Back to Top -->
     <div class="panel1">
         <a href="#top">Back To Top</a>
     </div>
 
-    <!-- end -->
     <div class="fnav">
         <ul>
             <li><a href="#about">About</a></li>
@@ -222,13 +218,9 @@
         </ul>
     </div>
 
-    </div>
     <div class="Bottom">
         <p>Copyright &copy;2024; Designed by <span class="designer">Huzair Asim</span></p>
     </div>
-
-
-
 
     <!-- JS File -->
     <script src="mymain.js"></script>
